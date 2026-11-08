@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nelson Armando Sabalo | Portefólio de cibersegurança</title>
+<meta name="description" content="Laboratórios SOC, simulações de ataque controladas e análise de registos com Wazuh.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="top">
+  <a class="brand" href="#inicio">nas<span>@soc-lab</span></a>
+  <button class="menu-btn" aria-label="Abrir menu" aria-expanded="false">Menu</button>
+  <nav id="nav">
+    <a href="#projectos">Projectos</a>
+    <a href="#sobre">Sobre</a>
+    <a href="#competicoes">Competições</a>
+    <a href="#pratica">Prática</a>
+    <a href="#cursos">Cursos</a>
+    <a href="#investigacao">Investigação</a>
+    <a href="#comunidade">Comunidade</a>
+    <a href="#contactos">Contactos</a>
+  </nav>
+</header>
+
+<main>
+<!-- 3.1 APRESENTAÇÃO -->
+<section class="hero" id="inicio">
+  <div class="hero-text">
+    <p class="kicker">Portefólio de cibersegurança</p>
+    <h1>Nelson Armando Sabalo</h1>
+    <p class="lead">Detecção e investigação de incidentes em laboratórios SOC próprios.</p>
+    <p>Engenheiro Informático com base em suporte técnico e redes. Aqui mostro o que construo e testo: ataques simulados em ambiente controlado e a análise dos registos que ficam para trás.</p>
+    <div class="actions">
+      <a class="btn primary" href="#projectos">Ver projectos</a>
+      <!-- SUBSTITUIR pelos teus URLs reais -->
+      <a class="btn" href="#" data-ph="URL do GitHub">GitHub</a>
+      <a class="btn" href="#" data-ph="URL do LinkedIn">LinkedIn</a>
+    </div>
+  </div>
+  <div class="term" aria-label="Excerto real de /var/log/auth.log do laboratório">
+    <div class="term-bar"><i></i><i></i><i></i><span>ubuntu@alvo: ~</span></div>
+    <pre><code><span class="l l1"><b>$</b> sudo grep "Failed password" /var/log/auth.log</span>
+<span class="l l2">sshd[4423]: Failed password for invalid user pentest
+            from 192.168.222.133 port 39462 ssh2</span>
+<span class="l l3">sshd[4425]: Failed password for invalid user pentest
+            from 192.168.222.133 port 39464 ssh2</span>
+<span class="l l4 dim"># origem: Kali na rede interna. Nenhum login bem-sucedido.</span>
+<span class="l l5"><b>$</b> <em class="cursor"></em></span></code></pre>
+  </div>
+</section>
+
+<!-- 3.3 PROJECTOS -->
+<section id="projectos">
+  <div class="head"><h2>Projectos</h2><p>Cada projecto tem contexto, o que fiz, resultados e evidências.</p></div>
+  <div class="cards">
+    <button class="card" data-open="p1">
+      <span class="tag">SOC Home Lab</span>
+      <h3>Simulação de ataque de força bruta SSH</h3>
+      <p>Tentativas de autenticação falhadas a partir do Kali contra um Ubuntu monitorizado, e a investigação nos registos e no Wazuh.</p>
+      <ul class="chips"><li>Kali Linux</li><li>Ubuntu</li><li>Wazuh</li><li>SSH</li></ul>
+      <span class="more">Ver detalhes</span>
+    </button>
+    <div class="card empty">
+      <span class="tag">Em breve</span>
+      <h3>Próximo projecto</h3>
+      <p class="ph">[Espaço reservado: adiciona aqui o próximo laboratório, por exemplo a integração Wazuh + Shuffle.]</p>
+    </div>
+  </div>
+</section>
+
+<!-- 3.2 SOBRE -->
+<section id="sobre">
+  <div class="head"><h2>Sobre</h2></div>
+  <div class="about">
+    <p>Venho do suporte técnico e das redes, e é daí que me interessa a cibersegurança: perceber o que se passa nos sistemas e ler os sinais que deixam. Gosto de montar o ambiente, provocar o evento e depois investigá-lo.</p>
+    <dl>
+      <dt>Gosto de trabalhar com</dt><dd>Linux, análise de registos, Wazuh (SIEM/XDR), Kali Linux e máquinas virtuais.</dd>
+      <dt>A desenvolver</dt><dd>Operações de SOC: triagem de alertas, investigação de eventos de autenticação e integração de ferramentas.</dd>
+      <dt>A construir agora</dt><dd>Um laboratório de SOC em torno do Wazuh, com avaliação de TheHive, Cortex, MISP e automação com Shuffle.</dd>
+      <dt>Objectivo</dt><dd>Consolidar competências de analista SOC. <span class="ph">[Espaço reservado: acrescenta o teu objectivo profissional.]</span></dd>
+    </dl>
+  </div>
+</section>
+
+<!-- 3.4 COMPETIÇÕES -->
+<section id="competicoes">
+  <div class="head"><h2>Competições</h2></div>
+  <article class="panel">
+    <h3>OWASP</h3>
+    <ul class="kv">
+      <li><b>Resultado</b><span class="ph">[Espaço reservado: resultado real, se existir]</span></li>
+      <li><b>Actividades</b><span class="ph">[Espaço reservado]</span></li>
+      <li><b>Desafios e áreas</b><span class="ph">[Espaço reservado]</span></li>
+      <li><b>O que aprendi</b><span class="ph">[Espaço reservado]</span></li>
+      <li><b>Evidências</b><span class="ph">[Espaço reservado: ligação ou captura]</span></li>
+    </ul>
+  </article>
+</section>
+
+<!-- 3.5 PRÁTICA -->
+<section id="pratica">
+  <div class="head"><h2>Aprendizagem prática</h2><p>Laboratórios de plataformas de treino. Não são certificações.</p></div>
+  <article class="panel">
+    <h3>OWASP <span class="ph">[plataforma a confirmar]</span></h3>
+    <ul class="kv">
+      <li><b>Laboratórios</b><span class="ph">[Espaço reservado: número real]</span></li>
+      <li><b>Áreas técnicas</b><span class="ph">[Espaço reservado]</span></li>
+      <li><b>Competências</b><span class="ph">[Espaço reservado]</span></li>
+      <li><b>Ferramentas</b><span class="ph">[Espaço reservado]</span></li>
+      <li><b>Evidências</b><span class="ph">[Espaço reservado: perfil ou capturas]</span></li>
+    </ul>
+  </article>
+</section>
+
+<!-- 3.6 CURSOS -->
+<section id="cursos">
+  <div class="head"><h2>Cursos e certificações</h2></div>
+  <article class="panel">
+    <h3 class="ph">[Espaço reservado: nome da certificação]</h3>
+    <ul class="kv">
+      <li><b>Motivo</b><span class="ph">[Espaço reservado]</span></li>
+      <li><b>Áreas abrangidas</b><span class="ph">[Espaço reservado]</span></li>
+      <li><b>Certificado</b><a class="ph" href="#" data-ph="URL do certificado">[Espaço reservado: ligação]</a></li>
+    </ul>
+  </article>
+</section>
+
+<!-- 3.7 INVESTIGAÇÃO -->
+<section id="investigacao">
+  <div class="head"><h2>Investigação e publicações</h2></div>
+  <article class="panel">
+    <h3 class="ph">[Espaço reservado: título do trabalho]</h3>
+    <ul class="kv">
+      <li><b>Tema</b><span class="ph">[Espaço reservado]</span></li>
+      <li><b>Contribuição</b><span class="ph">[Espaço reservado]</span></li>
+      <li><b>O que aprendi</b><span class="ph">[Espaço reservado]</span></li>
+      <li><b>Documento</b><a class="ph" href="#" data-ph="URL do documento">[Espaço reservado: ligação]</a></li>
+    </ul>
+  </article>
+</section>
+
+<!-- 3.8 COMUNIDADE -->
+<section id="comunidade">
+  <div class="head"><h2>Conquistas e comunidade</h2></div>
+  <article class="panel">
+    <p class="ph">[Espaço reservado: voluntariado, mentoria, palestras, prémios ou contribuições reais, com o impacto produzido.]</p>
+  </article>
+</section>
+
+<!-- 3.9 A APRENDER -->
+<section id="aprender">
+  <div class="head"><h2>A aprender agora</h2></div>
+  <ul class="learn">
+    <li><b>Wazuh + Shuffle</b> Automação de alertas e enriquecimento com VirusTotal.</li>
+    <li><b>TheHive e Cortex</b> Gestão de casos e análise de observáveis.</li>
+    <li><b>MISP</b> Threat intelligence e feeds OSINT.</li>
+    <li><b>Azure Fundamentals</b> Preparação para a certificação (ainda não obtida).</li>
+  </ul>
+</section>
+
+<!-- 3.10 CONTACTOS -->
+<section id="contactos">
+  <div class="head"><h2>Contactos</h2></div>
+  <div class="actions">
+    <a class="btn" href="#" data-ph="URL do GitHub">GitHub</a>
+    <a class="btn" href="#" data-ph="URL do LinkedIn">LinkedIn</a>
+    <a class="btn" href="#" data-ph="o teu e-mail (mailto:)">E-mail</a>
+  </div>
+  <p class="ph small">[Espaço reservado: substitui os href="#" pelos teus links reais.]</p>
+</section>
+</main>
+
+<footer>Nelson Armando Sabalo. Laboratórios executados em ambiente isolado e controlado.</footer>
+
+<!-- DETALHE DO PROJECTO 1 -->
+<dialog id="p1" class="modal" aria-labelledby="p1t">
+  <div class="modal-in">
+    <button class="close" data-close aria-label="Fechar">Fechar</button>
+    <p class="kicker">SOC Home Lab</p>
+    <h2 id="p1t">Simulação de ataque de força bruta SSH</h2>
+
+    <div class="grid2">
+      <section><h4>Qual foi o projecto</h4>
+        <p>Uma simulação controlada de tentativas de autenticação SSH falhadas, do Kali Linux contra um Ubuntu com agente Wazuh.</p></section>
+      <section><h4>Porque o desenvolvi</h4>
+        <p>Para perceber, na prática, como um analista SOC identifica e investiga actividade suspeita num ambiente Linux.</p></section>
+      <section><h4>Objectivo</h4>
+        <p>Identificar, monitorizar e investigar as tentativas de acesso, do registo local ao alerta no SIEM.</p></section>
+      <section><h4>Ferramentas</h4>
+        <ul class="chips"><li>Kali Linux</li><li>Ubuntu</li><li>Wazuh SIEM/XDR</li><li>SSH (porta 22)</li><li>ss</li><li>grep</li><li>/var/log/auth.log</li></ul></section>
+    </div>
+
+    <h4>O que fiz</h4>
+    <ol class="steps">
+      <li>Confirmei que o SSH estava activo no Ubuntu com <code>ss -tlnp</code>.</li>
+      <li>No Kali, executei tentativas controladas de autenticação com um utilizador inexistente.</li>
+      <li>Analisei <code>/var/log/auth.log</code> e filtrei com <code>grep "Failed password"</code>.</li>
+      <li>Consultei o Wazuh para investigar os alertas ligados às tentativas.</li>
+    </ol>
+
+    <div class="grid2">
+      <section><h4>Competências desenvolvidas</h4>
+        <ul class="plain"><li>Leitura de registos de autenticação Linux</li><li>Verificação de serviços e portas em escuta</li><li>Identificação de origem e conta visada</li><li>Consulta de alertas num SIEM</li></ul></section>
+      <section><h4>Resultado</h4>
+        <ul class="plain ok"><li>Origem: IP interno da máquina Kali.</li><li>Alvo: conta inexistente (<code>Invalid user</code> nos registos).</li><li>SSH manteve-se operacional.</li><li>Nenhum login bem-sucedido.</li><li>O Wazuh registou eventos de autenticação falhada.</li></ul></section>
+    </div>
+
+    <h4>Relevância num ambiente real</h4>
+    <p>Tentativas repetidas de autenticação contra SSH são um sinal comum de reconhecimento ou de ataque a contas. Saber confirmar a origem, a conta visada e se algum acesso teve êxito é o ponto de partida de uma triagem num SOC.</p>
+
+    <h4>Evidências</h4>
+    <div class="shots">
+      <figure><button data-img="images/1.png"><img src="images/1.png" alt="Terminal Ubuntu com ss a mostrar a porta 22 em escuta" loading="lazy"></button><figcaption>Ubuntu: SSH em escuta na porta 22 (<code>ss -tlnp</code>).</figcaption></figure>
+      <figure><button data-img="images/2.png"><img src="images/2.png" alt="Terminal Kali com tentativas ssh negadas" loading="lazy"></button><figcaption>Kali: tentativas de autenticação com o utilizador <code>pentest</code>, todas negadas.</figcaption></figure>
+      <figure><button data-img="images/3.png"><img src="images/3.png" alt="auth.log com Failed password e Invalid user" loading="lazy"></button><figcaption>Ubuntu: <code>auth.log</code> com <code>Failed password</code> e <code>Invalid user</code> vindos de 192.168.222.133.</figcaption></figure>
+      <figure><button data-img="images/4.png"><img src="images/4.png" alt="Visão geral do Wazuh" loading="lazy"></button><figcaption>Wazuh: visão geral das últimas 24 horas.</figcaption></figure>
+      <figure><button data-img="images/5.png"><img src="images/5.png" alt="Wazuh Discover com 27 hits" loading="lazy"></button><figcaption>Wazuh Discover: 27 eventos nas últimas 24 horas.</figcaption></figure>
+      <figure><button data-img="images/6.png"><img src="images/6.png" alt="Documento expandido no Wazuh Discover" loading="lazy"></button><figcaption>Wazuh: documento expandido do agente Ubuntu (192.168.222.132).</figcaption></figure>
+    </div>
+    <p class="ph small">[Espaço reservado: captura do alerta Wazuh de autenticação SSH falhada (por exemplo, filtro por sshd ou authentication_failed).]</p>
+
+    <div class="actions">
+      <a class="btn" href="#" data-ph="URL do repositório">Repositório GitHub</a>
+      <a class="btn" href="#" data-ph="URL do relatório técnico">Relatório técnico</a>
+      <a class="btn" href="#" data-ph="URL da documentação">Documentação</a>
+      <a class="btn" href="#" data-ph="URL da demonstração">Demonstração</a>
+    </div>
+  </div>
+</dialog>
+
+<dialog id="lightbox" class="lb"><button class="close" data-close aria-label="Fechar">Fechar</button><img alt=""></dialog>
+<div id="toast" role="status"></div>
+<script src="script.js"></script>
+</body>
+</html>
